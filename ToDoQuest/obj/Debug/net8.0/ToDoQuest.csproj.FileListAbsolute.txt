@@ -125,3 +125,4 @@ D:\Personal\ToDoQuest\ToDoQuest\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Works
 D:\Personal\ToDoQuest\ToDoQuest\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Personal\ToDoQuest\ToDoQuest\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Personal\ToDoQuest\ToDoQuest\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+d:\Personal\ToDoQuest\ToDoQuest\obj\Debug\net8.0\ToDoQuest.sourcelink.json
