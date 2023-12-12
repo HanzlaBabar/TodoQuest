@@ -43,12 +43,19 @@ namespace ToDoQuest.Repositories
 
         public async Task<TodoItem> UpdateTodoItemAsync(TodoItem todoItem)
         {
-            var item = await _dbContext.TodoItems.FirstOrDefaultAsync(x => x.Id == todoItem.Id) ?? new TodoItem();
+            _dbContext.Update(todoItem);
+            await _dbContext.SaveChangesAsync();
 
-            item = todoItem;
+            return todoItem;
+        }
+
+        public async Task CompleteTodoItemAsync(int id)
+        {
+            var item = await _dbContext.TodoItems.FirstOrDefaultAsync(x => x.Id == id) ?? new TodoItem();
+
+            item.IsCompleted = true;
 
             await _dbContext.SaveChangesAsync();
-            return todoItem;
         }
     }
 }

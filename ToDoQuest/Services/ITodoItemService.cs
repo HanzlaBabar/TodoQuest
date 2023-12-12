@@ -9,5 +9,6 @@ namespace ToDoQuest.Services
         Task UpdateTodoItemAsync(TodoViewModel model);
         Task DeleteTodoItemAsync(int id);
         Task<TodoViewModel> GetTodoItemById(int id);
+        Task CompleteTodoItemAsync(int id);
     }
 }

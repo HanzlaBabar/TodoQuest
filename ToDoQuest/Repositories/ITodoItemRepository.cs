@@ -9,5 +9,6 @@ namespace ToDoQuest.Repositories
         Task<TodoItem> UpdateTodoItemAsync(TodoItem todoItem);
         Task DeleteTodoItemAsync(int id);
         Task<TodoItem> GetTodoItemById(int id);
+        Task CompleteTodoItemAsync(int id);
     }
 }

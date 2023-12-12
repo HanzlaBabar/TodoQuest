@@ -40,5 +40,10 @@ namespace ToDoQuest.Services
             var item = model.ToTodoItem();
             await _todoItemRepository.UpdateTodoItemAsync(item);
         }
+
+        public async Task CompleteTodoItemAsync(int id)
+        {
+            await _todoItemRepository.CompleteTodoItemAsync(id);
+        }
     }
 }

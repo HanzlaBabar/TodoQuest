@@ -94,17 +94,9 @@ public class HomeController : Controller
         return RedirectToAction(nameof(Index));
     }
 
-    [HttpPost]
-    public async Task<IActionResult> UpdateStatus(TodoViewModel model)
+    public async Task<IActionResult> Complete(int id)
     {
-        var todoItem = await _todoItemService.GetTodoItemById(model.Id);
-
-        if (todoItem == null)
-        {
-            return View("Not Found");
-        }
-
-        await _todoItemService.UpdateTodoItemAsync(model);
+        await _todoItemService.CompleteTodoItemAsync(id);
 
         return RedirectToAction(nameof(Index));
     }

@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using ToDoQuest.Data;
 
 namespace ToDoQuest.Models
@@ -7,6 +8,8 @@ namespace ToDoQuest.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
+
+        [DisplayName("Completed")]
         public bool IsCompleted { get; set; }
 
         public static TodoViewModel FromTodoItem(TodoItem todoItem)
